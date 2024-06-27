@@ -1,0 +1,164 @@
+<html>
+  <body>
+    <h1>Daftar Isi</h1>
+    <ul>
+      <li><a href="#judul1">Judul 1</a></li>
+      <li><a href="#judul2">Judul 2</a></li>
+      <li><a href="#judul3">Judul 3</a></li>
+    </ul>
+
+    <!-- perlu di ingat bahwa pennulisan link untuk id bookmark tidak paki # yaaa -->
+
+    <h1 id="judul1">Judul 1</h1>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <h1 id="judul2">Judul 2</h1>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <h1 id="judul3">Judul 3</h1>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+    <p>Artikel Panjang</p>
+  </body>
+</html>
+
+<!-- PENJELASAN 1 -->
+
+<!-- Dalam konteks web, bookmark dalam HTML mengacu pada penanda atau tautan yang mengarah langsung ke bagian tertentu dari halaman web. Bookmark ini memungkinkan pengguna untuk langsung menuju ke bagian spesifik dari halaman web tanpa harus menggulir manual atau mencari bagian tersebut.
+
+Cara Membuat Bookmark dalam HTML
+Untuk membuat bookmark dalam HTML, Anda menggunakan dua elemen utama: <a> (anchor) untuk membuat tautan dan id untuk menandai lokasi yang akan di-bookmark. Berikut adalah langkah-langkahnya:
+
+Menandai Lokasi (Target Bookmark): Anda perlu menambahkan atribut id pada elemen di halaman web yang ingin Anda buat sebagai target bookmark. Misalnya, jika Anda ingin mem-bookmark sebuah bagian paragraf:html
+
+<p id="bookmark-section">Ini adalah bagian yang akan di-bookmark.</p>
+Di sini, id="bookmark-section" menandai paragraf sebagai tempat bookmark.
+
+Membuat Tautan ke Bookmark: Kemudian, Anda membuat tautan atau anchor <a> yang mengarahkan ke bookmark tersebut. Tautan ini dapat diletakkan di mana saja di halaman web, misalnya di atas atau dalam menu navigasi:
+
+html
+Salin kode
+<a href="#bookmark-section">Menuju ke Bagian Bookmark</a>
+href="#bookmark-section": Atribut href menunjukkan ke lokasi dengan id="bookmark-section", yang akan membawa pengguna langsung ke sana ketika tautan ini diklik.
+Contoh Lengkap
+Berikut adalah contoh lengkap penggunaan bookmark dalam HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Bookmark HTML</title>
+</head>
+<body>
+    <h1>Halaman Contoh</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#section1">Menuju ke Bagian 1</a></li>
+            <li><a href="#section2">Menuju ke Bagian 2</a></li>
+        </ul>
+    </nav>
+
+    <section id="section1">
+        <h2>Bagian 1</h2>
+        <p>Ini adalah bagian pertama dari halaman.</p>
+    </section>
+
+    <section id="section2">
+        <h2>Bagian 2</h2>
+        <p>Ini adalah bagian kedua dari halaman.</p>
+    </section>
+
+    <footer>
+        <a href="#top">Kembali ke Atas</a>
+    </footer>
+</body>
+</html>
+
+Penjelasan:
+Navigasi: Di bagian navigasi, ada tautan <a> untuk menuju ke #section1 dan #section2, yang sesuai dengan id dari masing-masing bagian <section>.
+Bagian-bagian: Setiap <section> memiliki atribut id yang berbeda (section1 dan section2).
+Footer: Di bagian footer, ada tautan untuk kembali ke atas halaman (#top), meskipun dalam contoh ini "top" hanya sebagai contoh, biasanya diberi id pada elemen body atau html untuk kembali ke atas.
+Dengan menggunakan teknik ini, pengguna dapat dengan mudah melompat ke bagian-bagian spesifik dari halaman web Anda dengan mengklik tautan yang sesuai.
+ -->
+
+<!-- PENJELASAN 2 -->
+
+<!-- Dalam konteks HTML, "bookmark" sering kali merujuk pada penanda atau tautan yang digunakan untuk langsung menuju ke bagian tertentu dari halaman web. Penanda ini memungkinkan pengguna untuk dengan mudah melompat ke bagian-bagian spesifik dari halaman tanpa harus menggulir manual atau mencari bagian tersebut.
+
+Pembagian Penanda (Bookmark) dalam HTML
+Penggunaan "bookmark" dalam HTML tidak melibatkan pembagian berbeda secara teknis seperti elemen lainnya. Ini lebih merupakan konsep penggunaan tautan dan atribut id untuk menandai lokasi yang spesifik di dalam halaman. Berikut adalah elemen utama yang terlibat:
+
+Tautan (<a>): Digunakan untuk membuat tautan yang mengarah ke lokasi yang ditandai sebagai "bookmark".
+
+Atribut id: Digunakan untuk menandai bagian-bagian tertentu di dalam halaman yang dapat diakses secara langsung melalui tautan.
+
+Contoh Penggunaan
+Menandai Lokasi (Target Bookmark):
+<h2 id="section1">Bagian Pertama</h2>
+<p>Ini adalah isi dari bagian pertama.</p>
+
+<h2 id="section2">Bagian Kedua</h2>
+<p>Ini adalah isi dari bagian kedua.</p>
+Dalam contoh di atas, <h2> digunakan untuk menunjukkan judul dari setiap bagian, dan setiap <h2> memiliki atribut id yang unik (id="section1" dan id="section2"). Ini menandai bagian-bagian yang dapat diakses langsung melalui tautan.
+
+Membuat Tautan ke Bookmark:
+<a href="#section1">Menuju ke Bagian Pertama</a>
+<br>
+<a href="#section2">Menuju ke Bagian Kedua</a>
+Di sini, <a> digunakan untuk membuat tautan yang mengarah ke bagian-bagian yang telah ditandai dengan id. Ketika tautan ini diklik, pengguna akan langsung dibawa ke bagian yang sesuai di dalam halaman.
+
+Kesimpulan
+Penggunaan "bookmark" dalam HTML lebih merupakan tentang cara mengatur tautan dan menandai bagian-bagian spesifik di dalam halaman web. Ini tidak melibatkan pembagian teknis seperti elemen atau atribut dalam HTML, tetapi lebih pada penggunaan yang tepat dari <a> dan atribut id untuk mencapai navigasi yang lebih mudah dan pengalaman pengguna yang lebih baik di halaman web. -->

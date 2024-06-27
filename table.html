@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Table</title>
+  </head>
+  <body>
+    <h1>Belajar Table</h1>
+    <table style="border: 1px solid black">
+      <colgroup>
+        <col span="2" style="background-color: yellow" />
+        <col style="background-color: aqua" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th colspan="2">Nama</th>
+          <th>Nilai</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Muhammad</td>
+          <td>Ainul</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Muhammad</td>
+          <td>Afif</td>
+          <td>85</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td rowspan="2">
+            Total Nilai <br />
+            Dan <br />
+            Rata Rata
+          </td>
+          <td>Nilai Total</td>
+          <td>175</td>
+        </tr>
+        <tr>
+          <td>Rata Rata</td>
+          <td>94</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
+
+<!-- Tag table, digunakan untuk membuat table -->
+<!--Tag tr untuk membuat row/baris  -->
+<!-- Tag th untuk membuat kolom header table -->
+<!-- Tag td untuk membuat kolom isi table -->
+<!-- Tag caption untuk keterangan table -->
+<!-- Tag thead, untuk grup header table -->
+<!-- Tag tbody, untuk grup isi table -->
+<!-- Tag tfoot, untuk grup footer table -->
+
+<!-- 
+Elemen <table> dalam HTML digunakan untuk membuat tabel data yang terstruktur dan terorganisir secara visual dalam sebuah halaman web. Tabel HTML terdiri dari baris dan kolom yang membentuk sel-sel, di mana data atau informasi ditempatkan. Berikut adalah beberapa konsep penting terkait elemen <table> dalam HTML:
+
+Struktur Tabel: Tabel terdiri dari baris dan kolom yang disusun dalam grid. Setiap sel dalam tabel dapat berisi teks, angka, gambar, atau elemen HTML lainnya.
+
+Elemen Utama: Elemen <table> adalah elemen induk yang menandai awal dan akhir dari sebuah tabel dalam dokumen HTML. Di dalam elemen <table>, Anda menempatkan elemen-elemen tambahan seperti <tr> (baris), <th> (sel kepala), dan <td> (sel data).
+
+Baris dan Kolom: Setiap baris dalam tabel ditandai dengan elemen <tr> (table row). Di dalam <tr>, Anda dapat menambahkan sel kepala (<th>) untuk kolom-kolom yang memuat judul atau informasi penting, atau sel data (<td>) untuk data atau informasi detail.
+
+Atribut Tabel: Elemen <table> dapat memiliki atribut seperti border, cellpadding, dan cellspacing untuk mengontrol tampilan dan jarak antara sel-sel dalam tabel. Namun, pengaturan ini lebih sering dikendalikan melalui CSS untuk desain yang lebih modern.
+
+Tata Letak dan Desain: CSS digunakan untuk mengontrol tata letak dan gaya tabel, termasuk warna latar belakang, warna teks, lebar kolom, tinggi baris, dan lainnya. Ini memungkinkan pengembang untuk menciptakan tabel yang estetis dan sesuai dengan desain halaman web secara keseluruhan.
+
+Responsif: Tabel dapat diatur agar responsif dengan menggunakan teknik seperti CSS Grid atau Flexbox, atau dengan menambahkan fitur scrollbar horizontal pada tabel besar. Ini membantu memastikan bahwa tabel tetap mudah diakses dan dinavigasi pada perangkat mobile atau layar kecil.
+
+Aksesibilitas: Penting untuk memastikan bahwa tabel terstruktur dengan baik dan dapat diakses oleh pengguna dengan teknologi bantuan seperti pembaca layar. Ini mencakup penggunaan judul kolom (<th scope="col">) dan deskripsi yang jelas untuk setiap sel data.
+
+Penggunaan yang Tepat: Tabel idealnya digunakan untuk menampilkan data terstruktur yang membutuhkan penyesuaian kolom dan baris yang jelas. Penggunaan tabel sebaiknya dihindari untuk tata letak halaman, di mana elemen lain seperti Flexbox atau Grid Layout lebih sesuai.
+
+Dengan memahami konsep dan prinsip dasar tabel HTML, pengembang dapat menciptakan tabel yang informatif, mudah dinavigasi, dan responsif, yang memperkaya pengalaman pengguna dalam mengeksplorasi dan memahami data yang disajikan dalam halaman web. -->

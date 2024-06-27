@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/foto-icon.png" />
+    <title>Belajar semantic</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      header {
+        background-color: gray;
+        padding: 35px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+        width: 100%;
+      }
+
+      article {
+        padding: 20px;
+        width: 100%;
+        background-color: #f1f1f1;
+      }
+
+      footer {
+        background-color: gray;
+        padding: 35px;
+        text-align: center;
+        color: white;
+        margin-top: 1rem;
+      }
+
+      nav {
+        background-color: #a4a4a4;
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        overflow: hidden;
+      }
+
+      nav li {
+        float: left;
+        margin-left: 10rem;
+      }
+
+      nav li a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+        transition: 0.7s;
+      }
+
+      nav li a:hover {
+        background-color: black;
+        border-radius: 50%;
+      }
+
+      a {
+        color: wheat;
+      }
+
+      header,
+      h1,
+      a,
+      p,
+      pre {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 1.5rem;
+      }
+
+      /* .judul {
+        text-align: left;
+      } */
+
+      /* img {
+        width: 90px;
+        float: right;
+        border-radius: 50%;
+        position: sticky;
+        top: 10px;
+        margin-top: 2rem;
+      } */
+      /* 
+
+      #contact-form {
+        width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+      }
+
+      #contact-form label,
+      #contact-form input,
+      #contact-form textarea {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      #contact-form button {
+        display: block;
+        width: 100px;
+        margin: 20px auto;
+        padding: 10px;
+        background-color: #ccc;
+        color: #000;
+        border: none;
+      } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- class="judul" -->
+      <h1 id="home">Judul Halaman</h1>
+      <!-- <img src="img/adibg-yellow.jpg" alt="foto-adi-yellow" /> -->
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#berandahtml">Beranda HTML</a></li>
+        <li><a href="#berandacss">Beranda CSS</a></li>
+        <li><a href="#contact">Kontak Kami</a></li>
+      </ul>
+    </nav>
+    <section>
+      <article>
+        <h1 id="berandahtml">Belajar HTML</h1>
+        <p>
+          HTML (HyperText Markup Language) adalah bahasa markup standar yang
+          digunakan untuk membuat dan merancang halaman web. HTML memberikan
+          struktur dasar dari sebuah halaman web dengan menggunakan elemen dan
+          tag yang mendefinisikan berbagai bagian dari konten, seperti teks,
+          gambar, tautan, dan elemen multimedia lainnya. Struktur Dasar HTML
+          Sebuah dokumen HTML biasanya terdiri dari beberapa bagian utama:
+          Deklarasi Doctype: Menentukan versi HTML yang digunakan. Elemen HTML:
+          Elemen root yang membungkus semua konten halaman. Elemen Head: Berisi
+          metadata tentang dokumen, seperti judul, link ke stylesheet, dan
+          informasi lain yang tidak ditampilkan langsung di halaman. Elemen
+          Body: Berisi konten aktual dari halaman web yang dilihat pengguna,
+          seperti teks, gambar, tautan, dll.
+        </p>
+      </article>
+      <article>
+        <h1 id="berandacss">Belajar CSS</h1>
+        <p>
+          CSS (Cascading Style Sheets) adalah bahasa stylesheet yang digunakan
+          untuk mengatur tampilan dan format elemen-elemen yang ditulis dalam
+          bahasa markup seperti HTML. CSS memungkinkan pengembang web untuk
+          memisahkan konten dari presentasi visual, sehingga mempermudah
+          pengelolaan dan pemeliharaan situs web. Fungsi CSS Mengatur Tata
+          Letak: CSS memungkinkan pengaturan tata letak halaman web, termasuk
+          posisi elemen, margin, padding, dan lainnya. Membuat Desain Responsif:
+          Dengan menggunakan media queries, CSS memungkinkan desain halaman web
+          yang responsif dan sesuai untuk berbagai perangkat, seperti desktop,
+          tablet, dan ponsel. Mengatur Gaya Teks: CSS dapat mengatur font,
+          ukuran teks, warna, dan gaya lainnya untuk meningkatkan keterbacaan
+          dan estetika. Mengatur Warna dan Latar Belakang: CSS dapat mengatur
+          warna latar belakang, gambar latar belakang, dan warna teks. Membuat
+          Animasi dan Transisi: CSS dapat digunakan untuk membuat efek animasi
+          dan transisi yang halus untuk elemen-elemen halaman web.
+        </p>
+      </article>
+      <article>
+        <h1 id="contact">Kontak</h1>
+        <pre>                         Gmail : ainulfuadi1234@gmail.com</pre>
+        <pre>   Phone : 085808406486</pre>
+        <pre>         IG : ainulfuady.dy</pre>
+        <pre>                   FB : Javasix script Leon</pre>
+      </article>
+    </section>
+    <!-- <h1 id="contact">Kontak kami</h1>
+
+    <form id="contact-form">
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email/Phone:</label>
+      <input type="text" id="email" email="email" required />
+      <label for="pesan">Pesan</label>
+      <input type="text" id="pesan" pesan="pesan" required />
+      <button type="submit">Kirim pesan</button>
+    </form> -->
+    <footer>
+      <p>
+        Powered &copy; Muhammad ainul fuady <time datetime="2024">2024</time>
+      </p>
+    </footer>
+  </body>
+</html>
+
+<!-- Tag article, untu konten article -->
+<!-- Tag aside, untuk bagian disamping konten, misal sidebar -->
+<!-- Tag figure, untuk konten ilustrasi, diagram foto, dan lain lain -->
+<!-- Tag figurecaption, untuk keterangan tag figure -->
+<!-- Tag footer, untuk bagian footer dokumen  -->
+<!-- Tag header, untuk bagian header dokumen  -->
+<!-- Tag main, untuk konten utama dokumen -->
+<!-- Tag mark, untuk bagian yang ditandai atau highlight -->
+<!-- Tag nav, untuk  bagian navigasi link -->
+<!-- Tag section, untuk section di dokumen -->
+<!-- Tag details, untuk bagian yang lebih detail yang bisa pengguna lihat -->
+<!-- Tag summary, untuk heading untuk tag details -->
+<!-- Tag time, untuk konten waktu/tanggal  -->
+
+<!-- 
+Semantic HTML mengacu pada praktik menggunakan elemen HTML yang memiliki makna atau tujuan yang jelas dan spesifik dalam menandai konten dalam halaman web. Ini tidak hanya membantu browser dan mesin pencari untuk memahami struktur dan konten halaman dengan lebih baik, tetapi juga meningkatkan aksesibilitas dan pengalaman pengguna. Berikut adalah beberapa konsep utama tentang semantic HTML:
+
+Makna Elemen: Setiap elemen HTML memiliki makna dan tujuan tertentu dalam menandai konten. Misalnya, <h1> menandai judul utama halaman, <p> menandai paragraf teks, <ul> dan <li> digunakan untuk membuat daftar tak berurutan, dan seterusnya.
+
+Keterbacaan: Menggunakan elemen semantik membantu membedakan struktur dan hierarki konten di dalam halaman. Ini membuat halaman lebih mudah dipahami oleh pengembang lain yang memeriksa kode, serta memudahkan perbaikan atau pemeliharaan di masa depan.
+
+Aksesibilitas: Elemen semantik memainkan peran penting dalam meningkatkan aksesibilitas halaman web. Pengguna teknologi bantuan, seperti pembaca layar, dapat menggunakan struktur semantik untuk memahami dengan lebih baik isi halaman dan bagaimana konten terorganisir.
+
+SEO (Search Engine Optimization): Mesin pencari menggunakan elemen semantik untuk memahami konten halaman dan merangkaknya dengan lebih efisien. Penggunaan elemen seperti <header>, <nav>, <article>, <section>, dan <footer> membantu dalam mengklasifikasikan bagian-bagian halaman web dengan lebih baik.
+
+Struktur Logis: Semantic HTML membantu dalam menciptakan struktur logis yang jelas untuk halaman web. Ini membantu pengembang dan perancang untuk merancang tata letak dan gaya CSS yang lebih konsisten dan mudah diatur.
+
+Pemeliharaan dan Skalabilitas: Dengan menggunakan elemen semantik, halaman web menjadi lebih mudah untuk diperbaiki, diperbarui, atau dikembangkan lebih lanjut. Struktur yang baik juga mendukung fleksibilitas dan perubahan tata letak atau desain di masa depan.
+
+Penggunaan yang Tepat: Penting untuk menggunakan elemen semantik sesuai dengan tujuannya yang sebenarnya. Misalnya, menghindari penggunaan elemen <div> untuk semua hal dan, sebaliknya, memilih elemen yang tepat seperti <header>, <main>, <section>, dan sebagainya untuk menandai konten dengan benar.
+
+Dengan menggunakan semantic HTML secara efektif, pengembang dapat meningkatkan struktur, aksesibilitas, dan SEO dari halaman web mereka, serta menciptakan pengalaman pengguna yang lebih baik secara keseluruhan. -->
